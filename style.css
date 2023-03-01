@@ -1,0 +1,233 @@
+body 
+{
+    color: #FFFFFF;
+    background-color: #000000;
+    margin-bottom: 0px;
+     
+}
+
+h1 
+{
+    color: blue ;
+	margin: 20px
+}
+
+hr
+ {
+    color: blue;
+    position: relative;
+    width:100% ;
+    z-index: 0;
+    margin: 20px 0;
+    padding: 0;
+    height: 0;
+    border: none;
+    box-shadow: 0 0 10px 3px blue;
+}
+
+
+h2 
+{
+    color: #8d2800;
+	margin: 20px
+}
+p
+{
+	margin: 20px
+}
+
+h3
+{
+    color: #e67d45;
+	margin: 20px
+}
+
+.scale {
+    display: inline-block; 
+    overflow: hidden; 
+    z-index: 1;
+    position: relative;
+	margin: 30px
+    
+}
+
+
+.blur {
+  filter: blur(5px);
+}
+
+.scale:hover {
+    
+    transform: scale(1.2);
+}
+
+.custom-colored-h1
+{
+    color: #5c034d;
+}
+.button{
+position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  outline: none;
+  display: inline-block;
+  overflow: hidden;
+  text-align: right;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 12px 16px;
+  color: #fff;
+  background: transparent;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  margin: 12px;
+border-radius: 7px;
+}
+.button:active {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+.button1{
+position: relative;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-color: red;
+  outline: none;
+  display: inline-block;
+  overflow: hidden;
+  text-align: right;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 12px 16px;
+  color: #fff;
+  background: transparent;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  margin: 12px;
+border-radius: 7px;
+}
+.button1:active {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.button2{
+position: relative;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-color: red;
+  outline: none;
+  display: inline-block;
+  overflow: hidden;
+  text-align: right;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 20px 30px;
+  color: #fff;
+  background: transparent;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  margin: 12px;
+border-radius: 10px;
+}
+.button2:active {
+  border-color: rgba(0, 0, 0, 0.1);
+  transform: scale(1.2);
+}
+.button2:hover {
+	transform: scale(1.2);
+}
+@keyframes glowing {
+0% { border-color: blue; box-shadow: 0 0 3px blue; }
+50% { border-color: blue; box-shadow: 0 0 30px blue; }
+100% { border-color: blue; box-shadow: 0 0 5px blue; }
+}
+.button2 {
+      animation: glowing 1500ms infinite;
+ }
+.back span{
+font-size: 50px;
+  font-weight: 600;
+   background-color: red;
+
+background-size: 100px;
+background-repeat:repeat;
+  color: transparent;
+font-family:Comic sans ms;
+background-clip: text;
+  -webkit-background-clip: text;
+    line-height: 80px;
+display:table-cell;
+    padding: 0 1px;
+}
+.back span:hover {
+animation: glowing 1500ms infinite;
+  }
+
+@keyframes jump {
+    0% {
+      transform:translateY(0px)
+    }
+    50% {
+      transform:translateY(-20px);
+    }
+    100% {
+      transform:translateY(0px)
+    }
+.back span:nth-child(1) {
+    animation-delay:0s;
+  }
+  .back span:nth-child(2) {
+    animation-delay:1s;
+  }
+  .back span:nth-child(3) {
+    animation-delay:2s;
+  }
+  .back span:nth-child(4) {
+    animation-delay:3s;
+  }
+  .back span:nth-child(5) {
+    animation-delay:4s;
+  }
+}
+.back1{
+font-size:15px;
+  font-weight: 600;
+ background-image: url(fon5.png);
+background-size: 100px;
+background-repeat:repeat;
+  color: transparent;
+font-family:Comic sans ms;
+background-clip: text;
+  -webkit-background-clip: text;
+    padding: 0 1px;
+text-align:right;
+margin-right:10px;
+}
+.news-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 5px;
+    align-content: center;
+}
+.news-cards img{
+    width: 100%;
+    height: 280px;
+}
+
+.news-cards h3 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .news-cards a {
+    padding: 10px 0;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+  }
+
+  .news-cards a:hover{
+      text-decoration: underline;
+  }
+
